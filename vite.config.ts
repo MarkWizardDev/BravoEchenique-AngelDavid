@@ -5,12 +5,15 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/BravoEchenique-AngelDavid/',
+    base: process.env.VITE_BASE_PATH || '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
+    },
+    preview: {
+      allowedHosts: ['bravoechenique-angeldavid.onrender.com'],
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
