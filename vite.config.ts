@@ -13,7 +13,7 @@ export default defineConfig(() => {
       },
     },
     preview: {
-      allowedHosts: ['https://bravoechenique-angeldavid.onrender.com/'],
+      allowedHosts: ['bravoechenique-angeldavid.onrender.com'],
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
