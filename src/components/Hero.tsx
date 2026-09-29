@@ -1,29 +1,31 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck, TrendingUp, Laptop, Wifi, Sparkles, Globe, Orbit } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Laptop, Wifi, Sparkles, Orbit, Building2, CheckCircle2 } from 'lucide-react';
 import BrilliantLogo from './BrilliantLogo';
 import TiltCard3D from './TiltCard3D';
 import ThreeHoloGlobe from './3d/ThreeHoloGlobe';
 import ThreeCrystalStar from './3d/ThreeCrystalStar';
-import brilliantSkylineImg from '../assets/images/brilliant_starlight_skyline_1790642805373.jpg';
-import cyberGlobe3DImg from '../assets/images/cyber_philippines_3d_sphere_1790626834705.jpg';
+import bgcCyberTechHubImg from '../assets/images/bgc_cyber_tech_hub_1790675062063.jpg';
 
 export default function Hero() {
-  const [viewMode, setViewMode] = useState<'3d' | 'render'>('3d');
+  const [viewMode, setViewMode] = useState<'3d' | 'tech'>('tech');
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 border-b border-slate-200 bg-gradient-to-b from-[#F2F8FD] via-[#EBF4FC] to-[#F4F9FD]">
-      {/* Deep Contrast Skyline Background in Hero */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 border-b border-slate-200 bg-[#F4F9FD]">
+      {/* Philippine Modern Technology Background with Crisp Sharp Clarity */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
-          src={brilliantSkylineImg}
-          alt="Philippine technological skyline representing Tala Tech software engineering hub in Manila"
-          className="w-full h-full object-cover object-top filter saturate-130 brightness-95"
-          style={{ opacity: 0.35 }}
+          src={bgcCyberTechHubImg}
+          alt="Philippine Modern Software Engineering Hub - Bonifacio Global City (BGC) Manila tech campus"
+          className="w-full h-full object-cover object-right md:object-center filter saturate-125 contrast-105 brightness-100"
           referrerPolicy="no-referrer"
         />
-        {/* Contrast Overlay ensuring all text has WCAG AAA level contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F2F8FD]/85 via-[#EBF4FC]/92 to-[#F4F9FD]" />
+        {/* Crisp Directional Gradient: Solid readability on the left, clear modern Philippine tech skyline on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F4F9FD] via-[#F4F9FD]/85 to-transparent md:to-[#F4F9FD]/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#F4F9FD]/60 via-transparent to-[#F4F9FD]" />
+        
+        {/* Subtle high-tech circuit grid overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0284c710_1px,transparent_1px),linear-gradient(to_bottom,#0284c710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +40,7 @@ export default function Hero() {
           >
             {/* Remote Team & National Symbol Kicker */}
             <div className="flex flex-wrap items-center gap-2.5 text-xs font-extrabold text-slate-800 tracking-wider uppercase">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border-2 border-sky-300 text-sky-950 shadow-sm animate-float-gentle">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md border-2 border-sky-300 text-sky-950 shadow-sm animate-float-gentle">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500" />
@@ -48,11 +50,11 @@ export default function Hero() {
               </span>
               <span aria-hidden="true" className="text-slate-400 font-bold">·</span>
               <span className="text-slate-900 font-black flex items-center gap-1">
-                <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-                <span>Tala (Bright Star)</span>
+                <Building2 className="w-3.5 h-3.5 text-sky-600" />
+                <span>Philippine Modern Tech</span>
               </span>
               <span aria-hidden="true" className="text-slate-400 font-bold">·</span>
-              <span className="text-slate-900 font-bold">Philippines</span>
+              <span className="text-slate-900 font-bold">NexaTech</span>
             </div>
 
             {/* Headline with High Contrast Black Text & Vibrant Cyan Accent */}
@@ -66,11 +68,11 @@ export default function Hero() {
 
             {/* Subheading with Deep Slate Readability */}
             <p className="text-lg text-slate-800 max-w-2xl leading-relaxed font-medium">
-              We are <strong className="text-slate-950 font-bold">Tala Tech</strong>—a high-performing, <strong className="text-slate-950 font-bold">100% remote software development team</strong> based in the Philippines. Operating through asynchronous agility and distributed workstations for over six years, we are now expanding our reach worldwide through our transparent <strong className="text-slate-950 font-bold">Profit Distribution</strong> model.
+              We are <strong className="text-slate-950 font-bold">NexaTech</strong>—a high-performing, <strong className="text-slate-950 font-bold">100% remote software development team</strong> based in the Philippines. Operating through asynchronous agility and distributed workstations for over six years, we are now expanding our reach worldwide through transparent international co-partnerships.
             </p>
 
             {/* Trust Highlights Row with Modern Crisp Borders & High Contrast */}
-            <div className="grid grid-cols-3 gap-4 pt-2 border-2 border-slate-200 py-4 max-w-xl bg-white rounded-2xl px-5 shadow-sm">
+            <div className="grid grid-cols-3 gap-4 pt-2 border-2 border-slate-200 py-4 max-w-xl bg-white/95 backdrop-blur-md rounded-2xl px-5 shadow-sm">
               <div className="space-y-0.5">
                 <div className="text-2xl sm:text-3xl font-black text-slate-950 tabular-nums font-mono flex items-baseline gap-1">
                   <span>6+</span>
@@ -80,10 +82,10 @@ export default function Hero() {
               </div>
               <div className="space-y-0.5 border-x-2 border-slate-200 px-3">
                 <div className="text-2xl sm:text-3xl font-black text-slate-950 tabular-nums font-mono flex items-baseline gap-1">
-                  <span>Fixed</span>
-                  <span className="text-xs text-sky-600 font-black">%</span>
+                  <span>100%</span>
+                  <span className="text-xs text-sky-600 font-black">Remote</span>
                 </div>
-                <div className="text-xs text-slate-700 font-bold">Profit Distribution</div>
+                <div className="text-xs text-slate-700 font-bold">Global Pipeline</div>
               </div>
               <div className="space-y-0.5">
                 <div className="text-2xl sm:text-3xl font-black text-slate-950 tabular-nums font-mono flex items-baseline gap-1">
@@ -99,11 +101,11 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                href="#profit"
+                href="#contact"
                 className="relative group inline-flex items-center gap-2 px-8 py-4 text-sm font-black text-white bg-slate-950 hover:bg-slate-900 rounded-xl shadow-lg shadow-slate-950/20 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-sky-700 whitespace-nowrap"
               >
-                <span>Calculate Profit Share</span>
-                <TrendingUp className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+                <span>Partner With Us</span>
+                <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
               </motion.a>
 
               <motion.a
@@ -124,7 +126,7 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          {/* Hero Visual Card - 3D Tilt Card with Real Interactive Three.js 3D Globe */}
+          {/* Hero Visual Card - 3D Tilt Card with Real Interactive Three.js 3D Globe & Philippine Tech Hub */}
           <motion.div
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -142,42 +144,48 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* 3D Holographic Global Network Canvas Container */}
+                {/* 3D Holographic Global Network & Modern Philippine Tech Showcase Container */}
                 <div className="mt-5 relative rounded-2xl overflow-hidden border-2 border-slate-800 bg-slate-950 shadow-inner group">
                   {/* Mode switcher tabs */}
-                  <div className="absolute top-3 right-3 z-20 flex items-center gap-1 p-1 bg-slate-900/90 rounded-lg border border-slate-700">
+                  <div className="absolute top-3 right-3 z-20 flex items-center gap-1 p-1 bg-slate-900/90 rounded-lg border border-slate-700 backdrop-blur-xs">
+                    <button
+                      onClick={() => setViewMode('tech')}
+                      className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono transition-colors cursor-pointer ${
+                        viewMode === 'tech' ? 'bg-cyan-500 text-slate-950' : 'text-slate-400 hover:text-white'
+                      }`}
+                    >
+                      BGC Tech Skyline
+                    </button>
                     <button
                       onClick={() => setViewMode('3d')}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono transition-colors ${
+                      className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono transition-colors cursor-pointer ${
                         viewMode === '3d' ? 'bg-cyan-500 text-slate-950' : 'text-slate-400 hover:text-white'
                       }`}
                     >
-                      Real 3D
-                    </button>
-                    <button
-                      onClick={() => setViewMode('render')}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono transition-colors ${
-                        viewMode === 'render' ? 'bg-cyan-500 text-slate-950' : 'text-slate-400 hover:text-white'
-                      }`}
-                    >
-                      HD Sphere
+                      Real 3D Globe
                     </button>
                   </div>
 
-                  {viewMode === '3d' ? (
-                    <ThreeHoloGlobe className="w-full h-52 sm:h-56" />
-                  ) : (
+                  {viewMode === 'tech' ? (
                     <div className="relative w-full h-52 sm:h-56 overflow-hidden">
                       <img
-                        src={cyberGlobe3DImg}
-                        alt="3D Holographic Globe connecting Philippines to Global Enterprise Markets"
-                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                        src={bgcCyberTechHubImg}
+                        alt="Bonifacio Global City Taguig & Makati modern software engineering cyber district"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-105 contrast-105"
                         referrerPolicy="no-referrer"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent flex items-end justify-between p-3.5">
-                        <div className="text-xs font-bold text-white">Manila Node ➔ Global Enterprise Pipeline</div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent flex items-end justify-between p-3.5">
+                        <div className="text-xs font-bold text-white flex items-center gap-1.5">
+                          <Building2 className="w-3.5 h-3.5 text-cyan-400" />
+                          <span>Manila BGC Cyber Tech Hub</span>
+                        </div>
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500 text-slate-950">
+                          HD
+                        </span>
                       </div>
                     </div>
+                  ) : (
+                    <ThreeHoloGlobe className="w-full h-52 sm:h-56" />
                   )}
 
                   {/* Node Status Bar */}
@@ -211,14 +219,14 @@ export default function Hero() {
                   {/* Quick Role Division Badge with Solid High Contrast */}
                   <div className="grid grid-cols-2 gap-2.5 pt-0.5">
                     <div className="p-3 rounded-xl bg-sky-50 border-2 border-sky-200">
-                      <div className="text-[11px] font-black text-sky-950 uppercase tracking-wide">Tala Tech</div>
+                      <div className="text-[11px] font-black text-sky-950 uppercase tracking-wide">NexaTech</div>
                       <div className="text-xs text-sky-900 font-black mt-0.5">100% Technical Work</div>
                       <div className="text-[10px] text-sky-700 font-bold">Full-stack, QA, remote delivery</div>
                     </div>
                     <div className="p-3 rounded-xl bg-emerald-50 border-2 border-emerald-200">
                       <div className="text-[11px] font-black text-emerald-950 uppercase tracking-wide">Your Role</div>
                       <div className="text-xs text-emerald-900 font-black mt-0.5">Non-Technical</div>
-                      <div className="text-[10px] text-emerald-700 font-bold">Account & fund distribution</div>
+                      <div className="text-[10px] text-emerald-700 font-bold">Regional coordination & liaison</div>
                     </div>
                   </div>
                 </div>

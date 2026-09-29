@@ -14,9 +14,9 @@ export default function Footer({ onOpenReporting, onOpenSettings }: FooterProps)
           
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
-            <BrilliantLogo size="md" />
+            <BrilliantLogo size="md" theme="dark" />
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Tala Tech (meaning <em>Star</em> in Tagalog) is an established software engineering unit in the Philippines. Dedicated to over six years of ethical engineering, data privacy, and global expansion partnerships.
+              NexaTech is an established remote software engineering unit based in the Philippines. Dedicated to over six years of ethical engineering, data privacy, and global expansion partnerships.
             </p>
             <div className="flex items-center gap-3 text-slate-400 text-xs">
               <span className="flex items-center gap-1.5 text-sky-400">
@@ -45,11 +45,6 @@ export default function Footer({ onOpenReporting, onOpenSettings }: FooterProps)
               <li>
                 <a href="#roles" className="hover:text-sky-300 transition-colors">
                   Team Roles (Our Team – You – Client)
-                </a>
-              </li>
-              <li>
-                <a href="#profit" className="hover:text-sky-300 transition-colors text-sky-400 font-medium">
-                  Profit Distribution Calculator ★
                 </a>
               </li>
               <li>
@@ -108,7 +103,7 @@ export default function Footer({ onOpenReporting, onOpenSettings }: FooterProps)
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
           <div>
-            © {new Date().getFullYear()} Tala Tech Software Engineering. All rights reserved.
+            © {new Date().getFullYear()} NexaTech Software Engineering. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <span>WCAG 2.1 AA Compliant</span>

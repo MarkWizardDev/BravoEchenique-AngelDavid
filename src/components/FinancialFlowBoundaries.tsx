@@ -14,11 +14,11 @@ export default function FinancialFlowBoundaries() {
     },
     {
       title: 'Direct Business Accounts',
-      description: 'Tala Tech operates using appropriate business or commercial payment accounts in its own corporate name whenever legally and practically feasible.',
+      description: 'NexaTech operates using appropriate business or commercial payment accounts in its own corporate name whenever legally and practically feasible.',
     },
     {
       title: 'No Intermediary Fund Holding',
-      description: 'Partners are never asked to receive, hold, forward, or transfer money on behalf of Tala Tech without a verified, clearly documented, and lawful business reason.',
+      description: 'Partners are never asked to receive, hold, forward, or transfer money on behalf of NexaTech without a verified, clearly documented, and lawful business reason.',
     },
     {
       title: 'Separation of Personal Accounts',
@@ -46,7 +46,7 @@ export default function FinancialFlowBoundaries() {
     },
     {
       title: 'Strict Credential Privacy',
-      description: 'Tala Tech will never request passwords, online banking credentials, OTP/2FA codes, or unrestricted access to any private financial accounts.',
+      description: 'NexaTech will never request passwords, online banking credentials, OTP/2FA codes, or unrestricted access to any private financial accounts.',
     },
     {
       title: 'Software Services Distinction',
@@ -96,7 +96,7 @@ export default function FinancialFlowBoundaries() {
             Financial-Flow Boundaries
           </h2>
           <p className="mt-4 text-base text-slate-700 font-medium leading-relaxed">
-            Tala Tech is committed to absolute transparency, legally compliant practices, and informed consent. We engineer high-quality software—we do not engage in unauthorized financial intermediation or opaque fund transfers.
+            NexaTech is committed to absolute transparency, legally compliant practices, and informed consent. We engineer high-quality software—we do not engage in unauthorized financial intermediation or opaque fund transfers.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function FinancialFlowBoundaries() {
                 <div>
                   <div className="text-[11px] font-bold text-sky-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
                     <span className="w-5 h-5 rounded-full bg-[#0B63E5] text-white flex items-center justify-center text-[10px] font-bold shadow-xs">1</span>
-                    <span>Tier 1: Client Milestone Payment to Tala Tech</span>
+                    <span>Tier 1: Client Milestone Payment to NexaTech</span>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-center p-4 rounded-2xl bg-sky-50/70 border border-sky-100 hover:border-sky-200 transition-colors">
                     <div className="md:col-span-4 p-3.5 rounded-xl bg-white border border-sky-200 shadow-2xs">
@@ -167,16 +167,16 @@ export default function FinancialFlowBoundaries() {
                     <div className="md:col-span-4 p-3.5 rounded-xl bg-white border border-sky-200 shadow-2xs">
                       <div className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
                         <ShieldCheck className="w-4 h-4 text-[#0B63E5]" />
-                        <span>Tala Tech Hub</span>
+                        <span>NexaTech Hub</span>
                       </div>
                       <div className="text-[11px] text-slate-500 mt-1">
-                        Official commercial business account in Tala Tech's name
+                        Official commercial business account in NexaTech's name
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Tier 2: Tala Tech to Eligible Participant */}
+                {/* Tier 2: NexaTech to Eligible Participant */}
                 <div>
                   <div className="text-[11px] font-bold text-sky-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
                     <span className="w-5 h-5 rounded-full bg-[#0B63E5] text-white flex items-center justify-center text-[10px] font-bold shadow-xs">2</span>
@@ -186,7 +186,7 @@ export default function FinancialFlowBoundaries() {
                     <div className="md:col-span-4 p-3.5 rounded-xl bg-white border border-emerald-200 shadow-2xs">
                       <div className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
                         <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                        <span>Tala Tech Hub</span>
+                        <span>NexaTech Hub</span>
                       </div>
                       <div className="text-[11px] text-slate-500 mt-1">
                         Disburses partner compensation based on completed contracts
@@ -226,7 +226,7 @@ export default function FinancialFlowBoundaries() {
               <div className="mt-6 p-4 rounded-2xl bg-amber-50/95 border border-amber-200 flex items-start gap-3 shadow-2xs">
                 <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div className="text-xs text-amber-900 leading-relaxed">
-                  <strong>Important Notice on Financial Responsibility:</strong> Tala Tech will <strong>never ask you to act as an unregulated financial intermediary</strong>, funnel untracked third-party funds, or bypass established banking rules. If any proposed transaction is not completely understood or cannot be independently verified, participants must pause and decline to proceed.
+                  <strong>Important Notice on Financial Responsibility:</strong> NexaTech will <strong>never ask you to act as an unregulated financial intermediary</strong>, funnel untracked third-party funds, or bypass established banking rules. If any proposed transaction is not completely understood or cannot be independently verified, participants must pause and decline to proceed.
                 </div>
               </div>
             </div>

@@ -10,8 +10,8 @@ export default function TeamRolesDiagram() {
   const workflowSteps = [
     {
       title: '1. Project Scoping & Contract',
-      description: 'Client contracts via platform (Upwork/Freelancer). Tala Tech drafts the full technical proposal and architecture.',
-      flow: 'Client ➔ Tala Tech Proposal',
+      description: 'Client contracts via platform (Upwork/Freelancer). NexaTech drafts the full technical proposal and architecture.',
+      flow: 'Client ➔ NexaTech Proposal',
     },
     {
       title: '2. Escrow Funding & Account Setup',
@@ -20,8 +20,8 @@ export default function TeamRolesDiagram() {
     },
     {
       title: '3. Technical Development & QA',
-      description: 'Tala Tech developers code features, unit test, build UI/UX, and submit pull requests. Zero coding required from you.',
-      flow: 'Tala Tech Engineering ➔ Deliverables',
+      description: 'NexaTech developers code features, unit test, build UI/UX, and submit pull requests. Zero coding required from you.',
+      flow: 'NexaTech Engineering ➔ Deliverables',
     },
     {
       title: '4. Milestone Approval & Payment',
@@ -29,15 +29,15 @@ export default function TeamRolesDiagram() {
       flow: 'Platform Escrow ➔ Your Bank Account',
     },
     {
-      title: '5. Fixed Profit Distribution',
-      description: 'You retain your agreed fixed profit percentage. You remit the agreed engineering balance with complete receipts.',
-      flow: 'Your Payout ➔ Retain Your % ➔ Remit Balance',
+      title: '5. Documented Revenue Share',
+      description: 'You receive your agreed revenue share. Technical development balance is accounted for with complete receipts.',
+      flow: 'Client Milestone ➔ Documented Share & Accounting',
     },
   ];
 
   const entityDetails = {
     team: {
-      name: 'Our Team (Tala Tech)',
+      name: 'Our Team (NexaTech)',
       tag: '100% Remote Philippine Team',
       roleType: '100% Technical Aspects',
       icon: Cpu,
@@ -84,7 +84,7 @@ export default function TeamRolesDiagram() {
       responsibilities: [
         'Proposing software scopes, feature specifications, and milestone deadlines',
         'Depositing project milestones into secure marketplace escrow (Upwork / Direct contract)',
-        'Reviewing code deliverables and staging environments created by Tala Tech',
+        'Reviewing code deliverables and staging environments created by NexaTech',
         'Authorizing milestone releases upon successful code deployment and quality testing',
       ],
       skillsNeeded: 'Business or Product Management, Product Ownership',
@@ -108,14 +108,14 @@ export default function TeamRolesDiagram() {
             The Role of Both Sides
           </h2>
           <p className="mt-4 text-base text-slate-700 font-medium leading-relaxed">
-            Our collaboration is built on a clear, clean boundary: <strong>Tala Tech handles 100% of the technical coding</strong>, while you manage the regional partnership. Click each 3D card to inspect duties.
+            Our collaboration is built on a clear, clean boundary: <strong>NexaTech handles 100% of the technical coding</strong>, while you manage the regional partnership. Click each 3D card to inspect duties.
           </p>
         </div>
 
         {/* 3D Interactive 3-Node Diagram Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative mb-12">
           
-          {/* 1. Tala Tech Node */}
+          {/* 1. NexaTech Node */}
           <TiltCard3D intensity={10} glare={true}>
             <button
               onClick={() => setSelectedEntity('team')}
@@ -134,7 +134,7 @@ export default function TeamRolesDiagram() {
                     Our Team
                   </span>
                 </div>
-                <h3 className="text-xl font-black text-slate-950">Tala Tech</h3>
+                <h3 className="text-xl font-black text-slate-950">NexaTech</h3>
                 <div className="text-xs font-bold text-sky-700 mt-0.5">100% Remote Philippine Team</div>
                 <p className="text-xs text-slate-700 font-medium mt-3 leading-relaxed">
                   Builds 100% of software, web development, coding, and technical milestone deliveries.

@@ -27,7 +27,7 @@ export default function PurposeHistory() {
       year: 'Today & Beyond',
       title: 'Global Expansion & Co-Partnership',
       description:
-        'Opening regional co-partnerships worldwide to expand our presence in multiple international markets with our transparent, fixed-percentage profit distribution model.',
+        'Opening regional co-partnerships worldwide to expand our presence in multiple international markets with our transparent, documented co-partnership model.',
     },
   ];
 
@@ -45,7 +45,7 @@ export default function PurposeHistory() {
             A Purpose Built on Trust, Quality & Global Expansion
           </h2>
           <p className="mt-4 text-base text-slate-700 font-medium leading-relaxed">
-            Operating as an all-remote engineering unit across the Philippines, Tala Tech bridges high-caliber technical software development with global regional partners.
+            Operating as an all-remote engineering unit across the Philippines, NexaTech bridges high-caliber technical software development with global regional partners.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export default function PurposeHistory() {
                     <div>
                       <h4 className="text-xs font-black text-slate-950">Zero Coding Required by You</h4>
                       <p className="text-[11px] text-slate-700 font-medium leading-relaxed mt-0.5">
-                        You never write a line of code or attend sprint scrums. Tala Tech delivers complete software.
+                        You never write a line of code or attend sprint scrums. NexaTech delivers complete software.
                       </p>
                     </div>
                   </div>

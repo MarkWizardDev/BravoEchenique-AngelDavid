@@ -3,18 +3,16 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PurposeHistory from './components/PurposeHistory';
 import TeamRolesDiagram from './components/TeamRolesDiagram';
-import ProfitDistribution from './components/ProfitDistribution';
 import FinancialFlowBoundaries from './components/FinancialFlowBoundaries';
 import FaqSection from './components/FaqSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ReportingTab from './components/ReportingTab';
 import SettingsModal from './components/SettingsModal';
-import BrilliantBackground from './components/BrilliantBackground';
 import { EmailLog, UserSettings } from './types';
 
-const STORAGE_KEY_SETTINGS = 'tala_tech_user_settings_v1';
-const STORAGE_KEY_LOGS = 'tala_tech_email_logs_v1';
+const STORAGE_KEY_SETTINGS = 'nexatech_user_settings_v1';
+const STORAGE_KEY_LOGS = 'nexatech_email_logs_v1';
 
 const defaultSettings: UserSettings = {
   highContrast: false,
@@ -30,7 +28,7 @@ const initialSampleLogs: EmailLog[] = [
     senderName: 'David Vance',
     senderEmail: 'david.vance@example.org',
     recipient: 'james@zeusguy.xyz',
-    subject: 'Partnership Inquiry & Profit Split Agreement',
+    subject: 'Partnership Inquiry & Collaboration Terms',
     message: 'Hello James, I am interested in exploring the non-technical regional partner role. Please send over the VMware sandbox instructions.',
     status: 'Delivered',
   },
@@ -119,13 +117,10 @@ export default function App() {
         settings.highContrast ? 'high-contrast bg-[#E8F4FC]' : 'bg-[#F2F8FD]'
       } ${fontSizeClass}`}
     >
-      {/* Brilliant Animated Multi-Layer Starlight & Skyline Background */}
-      <BrilliantBackground />
-
       {/* Screen Reader live status announcement if enabled */}
       {settings.screenReaderMode && (
         <div className="sr-only" aria-live="polite">
-          High-accessibility screen reader mode enabled. Tala Tech Introduction Page ready.
+          High-accessibility screen reader mode enabled. NexaTech Introduction Page ready.
         </div>
       )}
 
@@ -141,7 +136,6 @@ export default function App() {
         <Hero />
         <PurposeHistory />
         <TeamRolesDiagram />
-        <ProfitDistribution />
         <FinancialFlowBoundaries />
         <FaqSection />
         <ContactSection

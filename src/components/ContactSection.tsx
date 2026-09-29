@@ -15,10 +15,10 @@ export default function ContactSection({ onEmailSent, onOpenReporting }: Contact
   const [copied, setCopied] = useState(false);
   const [senderName, setSenderName] = useState('');
   const [senderEmail, setSenderEmail] = useState('');
-  const [subjectPreset, setSubjectPreset] = useState('Partnership Inquiry & Profit Split Agreement');
+  const [subjectPreset, setSubjectPreset] = useState('Partnership Inquiry & Collaboration Terms');
   const [customSubject, setCustomSubject] = useState('');
   const [message, setMessage] = useState(
-    'Hello Tala Tech Team,\n\nI have reviewed your introduction page and would like to learn more about the regional partnership and profit distribution terms.\n\nPlease share the formal agreement guidelines and instructions on account coordination.'
+    'Hello NexaTech Team,\n\nI have reviewed your introduction page and would like to learn more about the regional partnership and cooperation terms.\n\nPlease share the formal agreement guidelines and instructions on account coordination.'
   );
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -261,7 +261,7 @@ export default function ContactSection({ onEmailSent, onOpenReporting }: Contact
                   onChange={(e) => setSubjectPreset(e.target.value)}
                   className="w-full px-4 py-3 bg-white border-2 border-slate-300 rounded-xl text-slate-950 text-sm focus:outline-none focus:border-sky-600 font-bold cursor-pointer"
                 >
-                  <option value="Partnership Inquiry & Profit Split Agreement">Partnership Inquiry & Profit Split Agreement</option>
+                  <option value="Partnership Inquiry & Collaboration Terms">Partnership Inquiry & Collaboration Terms</option>
                   <option value="VMware Virtual Machine Sandbox Instructions">VMware Virtual Machine Sandbox Instructions</option>
                   <option value="Bank Documentation & Compliance Question">Bank Documentation & Compliance Question</option>
                   <option value="Client Project Milestone Scoping">Client Project Milestone Scoping</option>

@@ -4,15 +4,20 @@ import crystalStar3DImg from '../assets/images/crystal_star_3d_render_1790626825
 interface BrilliantLogoProps {
   size?: 'sm' | 'md' | 'lg';
   showSubtitle?: boolean;
+  theme?: 'light' | 'dark' | 'auto';
 }
 
-export default function BrilliantLogo({ size = 'md', showSubtitle = false }: BrilliantLogoProps) {
+export default function BrilliantLogo({
+  size = 'md',
+  showSubtitle = false,
+  theme = 'light',
+}: BrilliantLogoProps) {
   const isSmall = size === 'sm';
   const isLarge = size === 'lg';
 
   return (
     <div className="flex items-center gap-3.5 select-none group cursor-pointer">
-      {/* 3D Floating Crystal Starlight Emblem */}
+      {/* The Beloved 3D Floating Crystal Starlight Cube Emblem */}
       <div className="relative flex items-center justify-center shrink-0">
         {/* Radiant Multi-Chroma Starlight Nebula Aura */}
         <motion.div
@@ -39,7 +44,7 @@ export default function BrilliantLogo({ size = 'md', showSubtitle = false }: Bri
           }`}
         />
 
-        {/* Inner Counter-Rotating Gyro Ring 2 (Counter-Clockwise, tilted 45deg) */}
+        {/* Inner Counter-Rotating Gyro Ring 2 (Counter-Clockwise) */}
         <motion.div
           animate={{ rotate: -360 }}
           transition={{ duration: 24, repeat: Infinity, ease: 'linear' }}
@@ -64,15 +69,12 @@ export default function BrilliantLogo({ size = 'md', showSubtitle = false }: Bri
         >
           <img
             src={crystalStar3DImg}
-            alt="Tala Tech 3D Crystal Star"
+            alt="NexaTech 3D Crystal Star Cube"
             className="w-full h-full object-cover filter brightness-120 contrast-125 saturate-110"
             referrerPolicy="no-referrer"
           />
           {/* Glass specular sheen overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent pointer-events-none" />
-          
-          {/* Sweeping crystal light gleam */}
-          <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-transparent via-white/70 to-transparent skew-x-12 animate-sweep-beam pointer-events-none" />
         </motion.div>
 
         {/* Orbiting Starlight Particle */}
@@ -85,56 +87,50 @@ export default function BrilliantLogo({ size = 'md', showSubtitle = false }: Bri
         </motion.div>
       </div>
 
-      {/* Brilliant 3D-Look Letterforms */}
+      {/* Pure, Brilliant Typography - Razor-Sharp, No Rectangular Overlay Glitch */}
       <div className="flex flex-col">
-        <div className="relative flex items-center overflow-hidden py-0.5">
-          <span
-            className={`font-display font-black tracking-tight bg-gradient-to-r from-slate-900 via-sky-700 to-cyan-600 bg-clip-text text-transparent group-hover:from-sky-700 group-hover:via-cyan-500 group-hover:to-blue-600 transition-all duration-300 drop-shadow-[0_2px_4px_rgba(2,132,199,0.2)] ${
+        <div className="relative flex items-center leading-none">
+          <div
+            className={`font-display font-black tracking-tight flex items-baseline transition-transform duration-200 group-hover:scale-[1.01] ${
               isSmall ? 'text-lg' : isLarge ? 'text-3xl md:text-5xl' : 'text-xl md:text-2xl'
             }`}
           >
-            TALA<span className="text-cyan-500 font-extrabold ml-1 drop-shadow-[0_0_14px_rgba(6,182,212,0.7)]">TECH</span>
-          </span>
+            {/* NEXA */}
+            <span
+              className={`bg-clip-text text-transparent font-black tracking-tight ${
+                theme === 'dark'
+                  ? 'bg-gradient-to-br from-white via-slate-100 to-slate-200 drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]'
+                  : 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 drop-shadow-xs'
+              }`}
+            >
+              NEXA
+            </span>
 
-          {/* Sweeping metallic starlight glint */}
-          <motion.div
-            animate={{
-              x: ['-100%', '220%'],
-            }}
-            transition={{
-              duration: 2.8,
-              repeat: Infinity,
-              ease: 'easeInOut',
-              repeatDelay: 1.2,
-            }}
-            className="absolute inset-0 w-1/3 bg-gradient-to-r from-transparent via-white/95 to-transparent skew-x-12 pointer-events-none"
-          />
+            {/* TECH - Luminous Electric Cyan Accent */}
+            <span className="ml-1 bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent font-black drop-shadow-[0_0_14px_rgba(6,182,212,0.45)]">
+              TECH
+            </span>
 
-          {/* Sparkle Glint */}
-          <motion.span
-            animate={{
-              opacity: [0, 1, 0],
-              scale: [0.5, 1.45, 0.5],
-              rotate: [0, 90, 180],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatDelay: 0.6,
-            }}
-            className="absolute -top-1 -right-3 text-cyan-400 text-xs pointer-events-none drop-shadow-[0_0_12px_rgba(56,189,248,1)]"
-            aria-hidden="true"
-          >
-            ✦
-          </motion.span>
+            {/* Clean Micro Starlight Sparkle */}
+            <span className="text-[10px] text-cyan-400 font-bold ml-1 self-start transform -translate-y-0.5 opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all">
+              ✦
+            </span>
+          </div>
         </div>
 
+        {/* Subtitle if enabled */}
         {showSubtitle && (
-          <span className="text-[11px] font-bold tracking-wider uppercase text-sky-800 flex items-center gap-1 drop-shadow-2xs">
-            <span>Star of Engineering</span>
-            <span aria-hidden="true" className="text-cyan-400 font-bold">✦</span>
-            <span className="text-cyan-700 font-extrabold">100% Remote Philippine Team</span>
-          </span>
+          <div className="flex items-center gap-1.5 mt-1">
+            <span className="text-[10px] font-black tracking-widest uppercase text-sky-700">
+              Star of Engineering
+            </span>
+            <span className="text-[9px] text-cyan-500" aria-hidden="true">
+              ·
+            </span>
+            <span className="text-[10px] font-bold text-slate-600">
+              Philippines
+            </span>
+          </div>
         )}
       </div>
     </div>

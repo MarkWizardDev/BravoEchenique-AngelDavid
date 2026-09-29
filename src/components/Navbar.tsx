@@ -14,8 +14,7 @@ export default function Navbar({ onOpenSettings, onOpenReporting }: NavbarProps)
   const navLinks = [
     { label: 'Story & Purpose', href: '#story' },
     { label: 'Team Roles', href: '#roles' },
-    { label: 'Profit Share', href: '#profit', highlight: true },
-    { label: 'Financial Boundaries', href: '#boundaries' },
+    { label: 'Financial Boundaries', href: '#boundaries', highlight: true },
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -30,7 +29,7 @@ export default function Navbar({ onOpenSettings, onOpenReporting }: NavbarProps)
         <a
           href="#"
           className="shrink-0 flex items-center pr-4 sm:pr-8 focus-visible:outline-2 focus-visible:outline-sky-500 rounded-lg p-1 -ml-1 transition-transform active:scale-98"
-          aria-label="Tala Tech Home"
+          aria-label="NexaTech Home"
         >
           <BrilliantLogo size="md" />
         </a>
